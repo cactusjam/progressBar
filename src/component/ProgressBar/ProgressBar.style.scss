@@ -1,0 +1,85 @@
+/**
+ * ScandiPWA - Progressive Web App for Magento
+ *
+ * Copyright © Scandiweb, Inc. All rights reserved.
+ * See LICENSE for license details.
+ *
+ * @license OSL-3.0 (Open Software License ("OSL") v. 3.0)
+ * @package scandipwa/base-theme
+ * @link https://github.com/scandipwa/base-theme
+ */
+
+// using the default "react-input-range" package css names
+
+.ProgressBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    @include after-mobile {
+        background: var(--breadcrumbs-background);
+        min-height: 70px;
+    }
+
+    &-Item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &-ActivityBar {
+        width: 100%;
+        height: 5px;
+        margin: 0 10px;
+        border-radius: 3px;
+    }
+
+    &-ActivityPoint {
+        position: relative;
+        margin-left: auto;
+        width: 50px; 
+    }    
+    
+    &-ActivityPointBlob {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        margin: auto;
+    }    
+
+    &-BlobActive {
+        color: white;
+        display: block;
+        padding: 9px;
+    }
+    
+    &-BlobNonActive {
+        color: rgb(82, 82, 82);
+        display: block;
+        padding: 9px;
+    }
+}
+
+.progressStepActive {
+    background: var(--primary-light-color);
+}
+
+.progressNonActive {
+    background: grey;
+}
+
+.pointTitle {
+font-weight: bold;
+position: absolute;
+bottom: -15px;
+}
+
+.titleActive {
+color: black;
+}
+
+.titleNonActive {
+color: grey;
+}
